@@ -1,7 +1,9 @@
 Windows installation of flask
-- Install python
-- Install setup tools and pip
-  * http://stackoverflow.com/questions/4750806/how-to-install-pip-on-windows
+- Install python (http://www.python.org/getit/), V2.7 or V3.3
+- Install setup tools and pip for your specific python version
+  * http://www.lfd.uci.edu/~gohlke/pythonlibs/#setuptools
+  * http://www.lfd.uci.edu/~gohlke/pythonlibs/#pip
 - Install flask
   * Open command line in pip directory
   * 'pip install flask'
+- If you are using Python 3.3, please use the py3.3 branch on the git repo, there is a resolved issue with V3.3 in the flask script
