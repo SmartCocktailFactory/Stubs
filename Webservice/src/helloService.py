@@ -47,7 +47,7 @@ def welcome():
 @app.route('/cocktails')
 @requires_auth
 def get_cocktails():
-    return json.dumps(cocktails.keys())
+    return json.dumps(list(cocktails.keys()))
 
 @app.route('/cocktails/<cocktail>/recipe')
 @requires_auth
