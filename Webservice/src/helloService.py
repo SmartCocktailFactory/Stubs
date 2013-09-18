@@ -45,12 +45,12 @@ def welcome():
     return 'Welcome to the Smart Cocktail Factory'
 
 @app.route('/cocktails')
-@requires_auth
+#@requires_auth
 def get_cocktails():
     return json.dumps(list(cocktails.keys()))
 
 @app.route('/cocktails/<cocktail>/recipe')
-@requires_auth
+#@requires_auth
 def get_recipe(cocktail):
     if not cocktail in cocktails:
         abort(404)
@@ -86,4 +86,4 @@ def create_login(username, password):
     users[username] = password
 
 if __name__ == '__main__':
-    app.run(port=12345, debug=True)
+    app.run(host='192.168.1.35', port=12345, debug=True)
